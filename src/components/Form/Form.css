@@ -1,0 +1,27 @@
+.container {
+  margin: auto;
+  width: 25%;
+  background-color: #cfed90;
+  padding-bottom: 5px;
+}
+.container .center-text {
+  text-align: center;
+}
+.container label {
+  display: inline-block;
+  min-width: 100px;
+}
+.container .heading {
+  background-color: #6b8e23;
+}
+.container textarea {
+  width: 95%;
+}
+.container form {
+  padding-left: 5px;
+  margin-top: 10px;
+}
+.container .error {
+  color: red;
+  font-size: 12px;
+}
