@@ -1,0 +1,33 @@
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  .tab-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .list-item {
+    float: left;
+    .tab-link {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+      &.active {
+        background-color: grey;
+      }
+      &.inactive {
+        background-color: lightgrey;
+      }
+      &:hover {
+        background-color: orange;
+      }
+    }
+  }
+}
