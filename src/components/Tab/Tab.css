@@ -3,31 +3,29 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-
-  .tab-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-
-  .list-item {
-    float: left;
-    .tab-link {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 16px;
-      text-decoration: none;
-      &.active {
-        background-color: grey;
-      }
-      &.inactive {
-        background-color: lightgrey;
-      }
-      &:hover {
-        background-color: orange;
-      }
-    }
-  }
+}
+.navigation-list .tab-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navigation-list .list-item {
+  float: left;
+}
+.navigation-list .list-item .tab-link {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.navigation-list .list-item .tab-link.active {
+  background-color: grey;
+}
+.navigation-list .list-item .tab-link.inactive {
+  background-color: lightgrey;
+}
+.navigation-list .list-item .tab-link:hover {
+  background-color: orange;
 }
