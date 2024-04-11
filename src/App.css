@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 
-.container {
+.main-container {
   background: #fff;
   display: flex;
   justify-content: center;
 }
 
-.innerContainer {
+.container {
   width: 600px;
   height: 800px;
   padding-bottom: 32px;
@@ -40,13 +40,13 @@
   margin-top: 8px;
 }
 
-.inputField {
+.input-field {
   width: 100%;
   margin-top: 8px;
   padding: 6px 8px;
 }
 
-.customButton {
+.submit-button {
   width: 120px;
   color: white;
   background-color: #4CAF50;
@@ -91,7 +91,7 @@
   margin-top: 12px;
 }
 
-.gridList {
+.grid-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -115,8 +115,4 @@
 .icon {
   width: 24px;
   height: 24px;
-}
-
-.dummyHeight {
-  height: 16px;
 }

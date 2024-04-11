@@ -1,12 +1,17 @@
-import { useSelector } from 'react-redux'
-import { Contact } from './Contact';
-import { selectFilteredIds } from '../contact-helpers/contactUtils';
+import { ContactCard } from './ContactCard';
+import PropTypes from "prop-types"
 
-export const ContactList = () => {
-  const contactIds = useSelector(state => selectFilteredIds(state))
-  const contactsList = contactIds.map(contactId => <Contact key={contactId} contactId={contactId}></Contact>)
+export const ContactList = (props) => {
+  const contactsList = props.contactList.map((contact) => 
+    <ContactCard key={contact.id} contact={ contact } deleteContact={props.deleteContact} />
+  )
 
-  return <div className='gridList'>
+  return <div className='grid-list'>
     {contactsList}
   </div>
+}
+
+ContactList.propTypes = {
+  contactList: PropTypes.array,
+  deleteContact: PropTypes.func
 }

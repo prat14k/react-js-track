@@ -1,24 +1,26 @@
 import PropTypes from "prop-types";
-import { ErrorMessage } from "./ErrorMessage";
-import { useDispatch, useSelector } from "react-redux";
-import { setFormData } from "../contact-helpers/contactSlice";
+import { InlineError } from "./InlineError";
+import { contactFormConfig } from "../helpers/contactUtils";
 
 export const InputTextBox = (props) => {
-  const field = useSelector(state => state.contact.formData[props.fieldId]);
-  const dispatch = useDispatch();
+  const fieldLabel = contactFormConfig[props.fieldId].label;
   return <>
     <div>
-      <div className="label">{field.label}<span className="error">*</span></div>
+      <div className="label">{fieldLabel}<span className="error">*</span></div>
       <input 
-        className="inputField"
+        className="input-field"
         type="text" 
-        value={field.value}
-        onChange={(event) => dispatch(setFormData({fieldId: props.fieldId, value: event.target.value}))} />
-      <ErrorMessage message={field.errorMsg} />
+        value={props.value || ""}
+        onChange={(event) => props.updateValue(props.fieldId, event.target.value)} 
+      />
+      <InlineError message={props.errorMessage} />
     </div>
   </>
 }
 
 InputTextBox.propTypes = {
-  fieldId: PropTypes.string
+  fieldId: PropTypes.string,
+  value: PropTypes.string,
+  errorMessage: PropTypes.string,
+  updateValue: PropTypes.func
 }
