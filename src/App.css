@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background: #fff;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.innerContainer {
+  width: 600px;
+  background: #eaf2d9;
+  padding-bottom: 32px;
+}
+
+.header {
+  width: 100%;
+  background: #9fb271;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+form {
+  margin-top: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.formRow {
+  display: flex;
+  justify-content: left;
+  margin-top: 12px;
+}
+
+.label {
+  width: 40%;
+  display: flex;
+  align-items: center; 
+  justify-content: left;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.inputText {
+  height: 32px;
+  width: 200px;
+  background: white;
+  border: 2px solid #5a8660;
+  padding: 8px;
+}
+
+.dropdown {
+  height: 32px;
+  width: 200px;
+  background: white;
+  border: 2px solid #5a8660;
+  padding: 4px;
+}
+
+.about {
+  height: 200px;
+  width: 100%;
+  background: white;
+  border: 2px solid #5a8660;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+.checkbox {
+  margin-top: 16px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.note {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.button {
+  background-color: #687447;
   color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+  width: 72px;
+  display: flex;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.topMargin16 {
+  margin-top: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.passwordMessage {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 48px; 
+  font-size: 14px;
+}
+
+.centerContent {
+  display: flex; 
+  justify-content: center;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  height: 16px;
+}
+
+.dummyHeight {
+  height: 16px;
+}
+
+.checkboxLabel {
+  margin-left: 8px;
 }
