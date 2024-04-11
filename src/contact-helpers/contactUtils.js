@@ -1,5 +1,5 @@
 import { createSelector } from "@reduxjs/toolkit";
-import validator from "../helpers/Validator";
+import validator from "../helpers/validator";
 
 const selectContacts = state => state.contact.contacts;
 const selectSearchTerm = state => state.contact.searchTerm;
