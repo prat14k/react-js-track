@@ -21,11 +21,4 @@ EmailTemplate.propTypes = {
     children: PropTypes.node
 }
 
-EmailTemplate.defaultProps = {
-    receiverName: "Sir", 
-    senderName: "Anonymous", 
-    salutation: "Hi", 
-    regards: "Regards"
-};
-
 export default EmailTemplate
