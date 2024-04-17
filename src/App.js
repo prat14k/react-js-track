@@ -1,8 +1,9 @@
-import Header from './components/Header/Header'
+import AllTabs from './components/AllTabs'
+import './App.css'
 
 const App = () => (
   <div className="App">
-    <Header />
+    <AllTabs />
   </div>
 )
 
